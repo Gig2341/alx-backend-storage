@@ -13,4 +13,4 @@ from pymongo import MongoClient
 def list_all(mongo_collection):
     '''a function that lists all documents in a collection'''
     for document in mongo_collection.find():
-        return document
+        return [document]
